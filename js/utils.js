@@ -42,7 +42,7 @@ function getCoinsData() {
             { "name": "c", "color": "#a15c2f", "value": 1 },
         ];
         case 1: return [
-            { "name": " 𒀱", "color": "#ffffff", "value": 1e62, "class": "currency-mythical" },
+            { "name": " 𒀱", "color": "#ffffff", "value": 1e62, "class": "currency-shadow-rainbow" },
             { "name": " 𒀱", "color": "#ffffff", "value": 1e47, "class": "currency-shadow" },
             { "name": " 𒇫", "color": "#66ccff", "value": 1e41, "class": "currency-shadow" },
             { "name": "🜊", "color": "#00ff00", "value": 1e35, "class": "currency-bold" },
