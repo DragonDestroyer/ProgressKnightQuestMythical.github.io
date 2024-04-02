@@ -36,3 +36,26 @@
     text-shadow: 0 0 5px currentColor;
     animation: currency-rainbow 12s infinite;
 }
+@keyframes currency-mythical{
+    0% {
+        color: #Cb74fe;
+    }
+    16% {
+        color: #A866d0;
+    }
+    33% {
+        color: #933cc8;
+    }
+    50% {
+        color: #7b1bb6;
+    }
+    66% {
+        color: #630c99;
+    }
+    83% {
+        color: #540784;
+    }
+    100% {
+        color: #39035b;
+    }
+}
