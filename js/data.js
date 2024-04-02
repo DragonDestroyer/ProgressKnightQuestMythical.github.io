@@ -197,11 +197,11 @@ const skillBaseData = {
     "Productivity": { name: "Productivity", maxXp: 100, heroxp: 37, effect: 1, description: "Hero XP" }, // 0.01
     "Bargaining": { name: "Bargaining", maxXp: 100, heroxp: 38, effect: -0.01, description: "Reduced Expenses" },
     "Meditation": { name: "Meditation", maxXp: 100, heroxp: 39, effect: 1000, description: "Happiness" }, // 0.01
-    "Cultivation": { name: "Cultivation", maxXp: 100, heroxp: 200, effect: 5, description: "Essence Gain"},
+    "Cultivation": { name: "Cultivation", maxXp: 100, heroxp: 40, effect: 5, description: "Essence Gain"},
 
-    "Strength": { name: "Strength", maxXp: 100, heroxp: 40, effect: 0.01, description: "Military Pay" },
-    "Battle Tactics": { name: "Battle Tactics", maxXp: 100, heroxp: 41, effect: 0.01, description: "Military XP" },
-    "Muscle Memory": { name: "Muscle Memory", maxXp: 100, heroxp: 42, effect: 0.01, description: "Strength XP" },
+    "Strength": { name: "Strength", maxXp: 100, heroxp: 41, effect: 0.01, description: "Military Pay" },
+    "Battle Tactics": { name: "Battle Tactics", maxXp: 100, heroxp: 42, effect: 0.01, description: "Military XP" },
+    "Muscle Memory": { name: "Muscle Memory", maxXp: 100, heroxp: 43, effect: 0.01, description: "Strength XP" },
 
     "Mana Control": { name: "Mana Control", maxXp: 100, heroxp: 46, effect: 0.01, description: "T.A.A. XP" },
     "Life Essence": { name: "Life Essence", maxXp: 100, heroxp: 82, effect: 0.01, description: "Longer Lifespan" },
