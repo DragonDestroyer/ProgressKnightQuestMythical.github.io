@@ -58,6 +58,7 @@ const tooltips = {
     "Productivity": "Learn to procrastinate less at work and receive more job experience per day.",
     "Bargaining": "Study the tricks of the trade and persuasive skills to lower any type of expense.",
     "Meditation": "Fill your mind with peace and tranquility to tap into greater happiness from within.",
+    "Cultivation": "While Meditating, you start to feel your veins heat up. Suddenly your veins go numb and you start cultivating a sort of essence.",
 
     // Combat
     "Strength": "Condition your body and strength through harsh training. Stronger individuals are paid more in the military.",
