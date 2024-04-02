@@ -542,7 +542,7 @@ button:focus {
 .congrats {
     margin-top: 1em;
     padding: 1em 1em 1em 1em !important;
-    font-size: 320%;
+    font-size: 300%;
     color: #d30202;
     text-align: center;
     border: 0.01em solid red;
