@@ -355,17 +355,17 @@ function getEssenceGain() {
     const faintHope = milestoneData["Faint Hope"]
     const rise = milestoneData["Rise of Great Heroes"]
     const darkMagician = gameData.taskData["Dark Magician"]
-    const cultivating = gameData.taskData["Cultivation"]
+    const Cultivating = gameData.taskData["Cultivation"]
 
     const theNewGold = gameData.requirements["The new gold"].isCompleted() ? 1000 : 1
     const lifeIsValueable = gameData.requirements["Life is valueable"].isCompleted() ? gameData.dark_matter : 1
 
     const IllumininCoreShield = gameData.itemData['Illuminin Core Shield'].getEffect()
 
-    return essenceControl.getEffect() * essenceCollector.getEffect() * transcendentMaster.getEffect()
+    return * Cultivating.getEffect() * essenceControl.getEffect() * essenceCollector.getEffect() * transcendentMaster.getEffect()
         * faintHope.getEffect() * rise.getEffect() * getChallengeBonus("dance_with_the_devil")
         * getAGiftFromGodEssenceGain() * darkMagician.getEffect() * getDarkMatterSkillEssence() 
-        * theNewGold * lifeIsValueable *  essenceMultGain() * (IllumininCoreShield == 0 ? 1 : IllumininCoreShield) * cultivating.getEffect()
+        * theNewGold * lifeIsValueable *  essenceMultGain() * (IllumininCoreShield == 0 ? 1 : IllumininCoreShield)
 }
 
 function getDarkMatterGain() {
