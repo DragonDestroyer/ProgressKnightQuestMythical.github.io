@@ -49,7 +49,7 @@ const milestoneBaseData = {
     "The End": { name: "The End", expense: 1e200, tier: 99, description: "Congratulations! You have beaten the game!" },
 
     "A New Path": { name: "A New Path", expense: 1e300, tier: 100, description: "Or have you?" },
-    "Compacted Dark Orbs": { name: "Compacted Dark Orbs", expense: 1e303, tier: 101, description: "Unlocks The Monolith, Dark Cubes" },
+    "The Monolith": { name: "The Monolith", expense: 1e303, tier: 101, description: "Unlocks The Monolith, Dark Cubes" },
 }
 
 const milestoneCategories = {
