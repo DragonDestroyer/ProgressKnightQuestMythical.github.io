@@ -63,5 +63,5 @@
 .currency-shadow-mythical{
     font-weight: bold;
     text-shadow: 0 0 5px currentColor;
-    animation: currency-rainbow 12s infinite;
+    animation: currency-rainbow 6s infinite;
 }
