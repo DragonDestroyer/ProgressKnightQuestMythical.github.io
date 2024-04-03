@@ -362,7 +362,7 @@ function getEssenceGain() {
 
     const IllumininCoreShield = gameData.itemData['Illuminin Core Shield'].getEffect()
 
-    return * Cultivating.getEffect() * essenceControl.getEffect() * essenceCollector.getEffect() * transcendentMaster.getEffect()
+    return Cultivating.getEffect() * essenceControl.getEffect() * essenceCollector.getEffect() * transcendentMaster.getEffect()
         * faintHope.getEffect() * rise.getEffect() * getChallengeBonus("dance_with_the_devil")
         * getAGiftFromGodEssenceGain() * darkMagician.getEffect() * getDarkMatterSkillEssence() 
         * theNewGold * lifeIsValueable *  essenceMultGain() * (IllumininCoreShield == 0 ? 1 : IllumininCoreShield)

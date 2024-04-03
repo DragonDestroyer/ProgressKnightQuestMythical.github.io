@@ -428,7 +428,7 @@ const requirementsBaseData = {
     "Productivity": new TaskRequirement([getQuerySelector("Productivity")], [{ task: "Concentration", requirement: 5 }]),
     "Bargaining": new TaskRequirement([getQuerySelector("Bargaining")], [{ task: "Concentration", requirement: 20 }]),
     "Meditation": new TaskRequirement([getQuerySelector("Meditation")], [{ task: "Concentration", requirement: 30 }, { task: "Productivity", requirement: 20 }]),
-    "Cultivation": new TaskRequirement([getQuerySelector("Cultivation")], [{ task: "Medatation", requirement: 4000 }, { task: "Concentration", requirement: 4000 }]),
+    "Cultivation": new TaskRequirement([getQuerySelector("Cultivation")], [{ task: "Meditation", requirement: 4000 }, { task: "Concentration", requirement: 4000 }]),
 
     // Combat
     "Strength": new TaskRequirement([getQuerySelector("Strength")], []),
