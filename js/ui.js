@@ -813,6 +813,9 @@ function renderSettings() {
     document.getElementById("challengeEssenceGainBuffDisplay").textContent = format(getChallengeBonus("dance_with_the_devil"), 2)
     document.getElementById("challengeEvilGainBuffDisplay").textContent = format(getChallengeBonus("legends_never_die"), 2)
     document.getElementById("challengeDarkMaterGainBuffDisplay").textContent = format(getChallengeBonus("the_darkest_time"), 2)
+
+    // Combat Stats
+    // document.getElementById("")
 }
 
 function renderRequirements() {

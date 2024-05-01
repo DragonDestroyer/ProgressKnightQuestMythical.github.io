@@ -1360,6 +1360,67 @@ function applyEvilPerks() {
     gameData.requirements["Eternal Wanderer"].requirements[0].requirement = getCelestialRequirement()
 }
 
+function numberCruncher(number, decimals){
+    var suffix = "";
+    if (decimals == undefined){decimals = 2;}
+    var precision = decimals;
+    if (number>999999999999999999999999999999999999999999999999999){
+        number = number/1000000000000000000000000000000000000000000000000000;
+        suffix = "sexdecillion";
+    } else if (number>999999999999999999999999999999999999999999999999){
+        number = number/1000000000000000000000000000000000000000000000000;
+        suffix = "quindecillion";
+    } else if (number>999999999999999999999999999999999999999999999){
+        number = number/1000000000000000000000000000000000000000000000;
+        suffix = "quattuordecillion";
+    } else if (number>999999999999999999999999999999999999999999){
+        number = number/1000000000000000000000000000000000000000000;
+        suffix = "tredecillion";
+    } else if (number>999999999999999999999999999999999999999){
+        number = number/1000000000000000000000000000000000000000;
+        suffix = "duodecillion";
+    } else if (number>999999999999999999999999999999999999){
+        number = number/1000000000000000000000000000000000000;
+        suffix = "undecillion";
+    } else if (number>999999999999999999999999999999999){
+        number = number/1000000000000000000000000000000000;
+        suffix = "decillion";
+    } else if (number>999999999999999999999999999999){
+        number = number/1000000000000000000000000000000;
+        suffix = "nonillion";
+    } else if (number>999999999999999999999999999){
+        number = number/1000000000000000000000000000;
+        suffix = "octillion";
+    } else if (number>999999999999999999999999){
+        number = number/1000000000000000000000000;
+        suffix = "septillion";
+    } else if (number>999999999999999999999){
+        number = number/1000000000000000000000;
+        suffix = "sextillion";
+    } else if (number>999999999999999999){
+        number = number/1000000000000000000;
+        suffix = "quintillion";
+    } else if (number>999999999999999){
+        number = number/1000000000000000;
+        suffix = "quadrillion";
+    } else if (number>999999999999){
+        number = number/1000000000000;
+        suffix = "trillion";
+    } else if (number>999999999){
+        number = number/1000000000;
+        suffix = "billion";
+    } else if (number>999999){
+        number = number/1000000;
+        suffix = "million";
+    } else if (number>999){
+        number = number/1000;
+        suffix = "thousand";
+    }  else if (number<1000){
+        precision = 0;
+    }
+    return number.toFixed(precision) + " " + suffix;
+}
+
 function updateRequirements() {
     // Call isCompleted on every requirement as that function caches its result in requirement.completed
     for (const i in gameData.requirements) gameData.requirements[i].isCompleted()
