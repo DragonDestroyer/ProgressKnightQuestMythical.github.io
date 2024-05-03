@@ -12,7 +12,7 @@ var battleRIGHTSHIPS=200;
 var battleMAXSPEED = 2;
 var battleDEATH_THRESHOLD = 0.5; //used to calculate battles
 var battleLEFTCOLOR = "#ffffff"
-var battleRIGHTCOLOR = "#000000"
+var battleRIGHTCOLOR = "#00FF00"
 var battleEXPLODECOLOR = "#ff0000"
 
 var ships = new Array(); 
@@ -524,7 +524,8 @@ function battleRestart(){
                 if (unitSize>probeCount){unitSize=probeCount;}
                 probeCount = probeCount - unitSize;
                 probesLostCombat = probesLostCombat + unitSize;
-                document.getElementById('probesLostCombatDisplay').innerHTML = numberCruncher(probesLostCombat);
+                var plc = numberCruncher(probesLostCombat);
+                document.getElementById('probesLostCombatDisplay').innerHTML = '2';                
                 } else {
                 numRightShips--;
                 if (unitSize>drifterCount){unitSize=drifterCount;}
