@@ -689,6 +689,9 @@ function renderDarkMatter() {
     document.getElementById("gottaBeFastEffect").textContent = format(getGottaBeFastGain(), 2)
     document.getElementById("gottaBeFastCost").textContent = format(getGottaBeFastCost())
 
+    document.getElementById("MythicallityEffect").textContent = format(getMythicallityDarkMatterGain())
+    document.getElementById("MythicallityCost").textContent = format(getMythicallityCost())
+
     if (gameData.dark_matter_shop.a_miracle)
         document.getElementById("aMiracleBuyButton").classList.add("hidden")
     else
@@ -707,6 +710,7 @@ function renderDarkMatter() {
     renderDarkMatterShopButton("aGiftFromGodBuyButton", canBuyAGiftFromGod())
     renderDarkMatterShopButton("gottaBeFastBuyButton", canBuyGottaBeFast())
     renderDarkMatterShopButton("lifeCoachBuyButton", canBuyLifeCoach())
+    renderDarkMatterShopButton("MythicallityButton", canBuyMythicallity())
 
     // Dark Matter Ability tree
     renderSkillTreeButton(document.getElementById("speedIsLife1"), gameData.dark_matter_shop.speed_is_life != 0, [1, 3].includes(gameData.dark_matter_shop.speed_is_life), gameData.dark_matter >= 100)

@@ -76,6 +76,21 @@ function buyGottaBeFast() {
     }
 }
 
+function getMythicallityCost() {
+    return Math.pow(5e7, gameData.dark_matter_shop.mythicallity + 1)
+}
+
+function canBuyMythicallity() {
+    return gameData.dark_orbs >= getMythicallityCost() && getMythicallityCos() != Infinity
+}
+
+function buyMythicallity() {
+    if (canBuyMythicallity()) {
+        gameData.dark_orbs -= getMythicallityCost()
+        gameData.dark_matter_shop.gotta_be_fast += 1
+    }
+}
+
 // Rewards
 function getDarkOrbGeneration() {
     if (gameData.dark_matter_shop.dark_orb_generator == 0) return 0
@@ -107,6 +122,12 @@ function getGottaBeFastGain() {
     if (gameData.active_challenge == "the_darkest_time") return 1
 
     return 1 + 0.2 * gameData.dark_matter_shop.gotta_be_fast
+}
+
+function getMythicallityDarkMatterGain() {
+    if (gameData.active_challenge == "the_darkest_time") return 1
+
+    return 1 + 0.2 * gameData.dark_matter_shop.mythicallity
 }
 
 function getAMiracleCost() {

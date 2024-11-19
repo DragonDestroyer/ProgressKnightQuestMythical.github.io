@@ -51,7 +51,12 @@ const tooltips = {
     "Omega": "ω",
 
     // Mythical Knights
-    "Knight Of Good": "The first of the 9 progress knights",
+    "Knight Of Darkness": "The first of the 9 progress knights",
+    //Knight of Chaos
+    //Knight of Calamity
+    //Knight of Destruction
+    //Knight of Corruption
+    //Knight of 
 
     // Fundamentals
     "Concentration": "Improve your learning speed through practising intense concentration activities.",

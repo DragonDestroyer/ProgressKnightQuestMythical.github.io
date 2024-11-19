@@ -36,7 +36,8 @@
         hyper_speed: 0,
         both_dark_mater_skills: 0,
         evil_booster: 0,
-        more_perk_points : 0
+        more_perk_points : 0,
+        enable_infinite_lifespan : 0,
     },
 
 
@@ -99,6 +100,7 @@
         a_gift_from_god: 0,
         life_coach: 0,
         gotta_be_fast: 0,
+        mythicallity: 0,
 
         // Permanent unlocks
         a_miracle: false,
@@ -189,7 +191,7 @@ const jobBaseData = {
     "Lost in the dark": { name: "Lost in the dark", maxXp: Infinity, income: 2.5e58, heroxp: 1358 },
     "Omega": { name: "Omega", maxXp: Infinity, income: 2.5e62, heroxp: 3120 },
 
-    "Knight Of Good": { name: "Knight Of Good", maxXp: Infinity, income: 5e80, heroxp: 5120 },
+    "Knight Of Darkness": { name: "Knight Of Darkness", maxXp: Infinity, income: 5e80, heroxp: 5120 },
 }
 
 const skillBaseData = {
@@ -357,6 +359,7 @@ const requirementsBaseData = {
     "Rebirth button 3": new TaskRequirement(["#rebirthButton3"], [{ task: "Cosmic Recollection", requirement: 1 }]),
     "Rebirth button 4": new EssenceRequirement(["#rebirthButton4"], [{ requirement: 5e10 }]),
     "Rebirth button 5": new EssenceRequirement(["#rebirthButton5"], [{ requirement: 1e60 }]),
+    "Rebirth button 6": new TaskRequirement(["#rebirthButton6"], [{ task: "Knight Of Darkness", requirement: 1 }]),
 
     "Rebirth stats evil": new AgeRequirement(["#statsEvilGain"], [{ requirement: 200 }]),
     "Rebirth stats essence": new TaskRequirement(["#statsEssenceGain"], [{ task: "Cosmic Recollection", requirement: 1 }]),
@@ -421,7 +424,7 @@ const requirementsBaseData = {
     "Omega": new TaskRequirement([getQuerySelector("Omega")], [{ task: "Lost in the dark", requirement: 25000, herequirement: 185000 }]),
 
     // Mythical Knights
-    "Knight Of Good": new TaskRequirement([getQuerySelector("Knight Of Good")], [{ task: "Omega", requirement: 100000, herequirement: 190000 }]),
+    "Knight Of Darkness": new TaskRequirement([getQuerySelector("Knight Of Darkness")], [{ task: "Omega", requirement: 100000, herequirement: 190000 }]),
 
     // Fundamentals
     "Concentration": new TaskRequirement([getQuerySelector("Concentration")], []),
@@ -615,7 +618,7 @@ const jobCategories = {
     "The Void": ["Corrupted", "Void Slave", "Void Fiend", "Abyss Anomaly", "Void Wraith", "Void Reaver", "Void Lord", "Abyss God"],
     "Galactic Council": ["Eternal Wanderer", "Nova", "Sigma Proioxis", "Acallaris", "One Above All"],
     "Metaverse Guards": ["Snow Crash", "Player One", "Lost in the dark", "Omega"],
-    "Mythical Alignments": ["Knight Of Good"],
+    "Mythical Alignments": ["Knight Of Darkness"],
 }
 
 const skillCategories = {

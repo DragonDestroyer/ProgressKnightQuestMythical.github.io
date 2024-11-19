@@ -193,6 +193,7 @@ const perks_cost = {
     keep_dark_mater_skills: 500,
     evil_booster: 2500,
     more_perk_points: 5000,
+    enable_infinite_lifespan: 1000000,
 }
 
 const perk_names = {
@@ -212,6 +213,7 @@ const perk_names = {
     keep_dark_mater_skills: "keep dark matter abilities",
     evil_booster: "Evil booster",
     more_perk_points: "10x perk points gain",
+    enable_infinite_lifespan: "enables infinite lifespan in challenges again",
 }
 
 function getMetaversePerkName(perkName) {    

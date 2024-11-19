@@ -379,7 +379,7 @@ function getDarkMatterGain() {
     const mythicalKnight = gameData.taskData["Mythical Knight"]
 
 
-    return 1 * darkRuler.getEffect() * mythicalKnight.getEffect() * darkMatterHarvester * darkMatterMining * darkMatterMillionaire * getChallengeBonus("the_darkest_time") * getDarkMatterSkillDarkMater() * darkMatterMultGain() *
+    return 1 * darkRuler.getEffect() * mythicalKnight.getEffect() * Mythicallity() * darkMatterHarvester * darkMatterMining * darkMatterMillionaire * getChallengeBonus("the_darkest_time") * getDarkMatterSkillDarkMater() * darkMatterMultGain() *
         (Desintegration == 0 ? 1 : Desintegration) * (TerraninControlUnit == 0 ? 1 : TerraninControlUnit) * TheEndIsNear
 }
 
@@ -565,6 +565,7 @@ function autoPerks() {
         buyAGiftFromGod()
         buyGottaBeFast()
         buyLifeCoach()
+        buyMythicallity()
     }
 
     if (gameData.perks.auto_sacrifice == 1 && gameData.hypercubes > 1000) {
@@ -837,6 +838,7 @@ function rebirthFive() {
     gameData.dark_matter_shop.a_gift_from_god = 0
     gameData.dark_matter_shop.gotta_be_fast = 0
     gameData.dark_matter_shop.life_coach = 0
+    gameData.dark_matter_shop.mythicallity = 0
     
 
     if (gameData.perks.keep_dark_mater_skills == 0) {
